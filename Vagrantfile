@@ -2,6 +2,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "openstorage" do |openstorage|
     openstorage.vm.box = "ubuntu/trusty64"
+    openstorage.vm.box_version = "20160127.0.0"
     openstorage.vm.hostname = "openstorage"
     openstorage.vm.network "private_network", ip: "192.168.99.198"
 
@@ -16,6 +17,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "nfs" do |nfs|
     nfs.vm.box = "ubuntu/trusty64"
+    nfs.vm.box_version = "20160127.0.0"
     nfs.vm.hostname = "nfs"
     nfs.vm.network "private_network", ip: "192.168.99.199"
 
