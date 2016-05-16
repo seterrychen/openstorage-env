@@ -7,8 +7,8 @@ echo 'deb https://apt.dockerproject.org/repo ubuntu-trusty main' | sudo tee -a /
 sudo apt-get update && sudo apt-get install -y docker-engine
 
 # install golang
-wget -q https://storage.googleapis.com/golang/go1.5.3.linux-amd64.tar.gz
-sudo tar -xf go1.5.3.linux-amd64.tar.gz -C /usr/local/
+wget -q https://storage.googleapis.com/golang/go1.5.4.linux-amd64.tar.gz
+sudo tar -xf go1.5.4.linux-amd64.tar.gz -C /usr/local/
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /home/vagrant/.profile
 echo 'export GOPATH=/home/vagrant/gopath' >> /home/vagrant/.profile
 
