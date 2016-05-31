@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "openstorage2" do |openstorage2|
     openstorage2.vm.box = "ubuntu/trusty64"
     openstorage2.vm.box_version = "20160127.0.0"
-    openstorage2.vm.hostname = "openstorage"
+    openstorage2.vm.hostname = "openstorage2"
     openstorage2.vm.network "private_network", ip: "192.168.99.198"
 
     openstorage2.vm.provider "virtualbox" do |vb|
